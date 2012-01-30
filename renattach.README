@@ -1,0 +1,84 @@
+renattach
+------------------------------------------
+
+Filter to rename or delete potentially dangerous e-mail attachments
+
+A fast and efficient UNIX stream filter that can rename or delete
+potentially dangerous e-mail attachments. It's a highly effective way
+of protecting end-users from harmful mail content (worms/viruses) by
+disabling or removing attachments that may be accidentally executed by
+users. The filter is invoked as a simple pipe for use in a wide
+variety of systems. The 'kill' feature (which eliminates entire
+messages) can also help sites deal with resource strains caused by
+modern virus floods.
+
+Unlike a conventional virus scanner, there are no specific virus or
+worm definitions. Instead, renattach identifies potentially dangerous
+attachments based on file extension and executable encoded body
+content. The software is even capable of reading filenames from inside
+ZIP archives on the fly, without requiring any external software. The
+self-contained MIME code parses, fully interprets, then rewrites the
+header of every attached file. During this process it checks the
+file's extension against a list, and further checks to make sure the
+filename is not on a banned list. Only after passing through these
+steps is the MIME header written fresh using a predetermined, known
+format.
+
+The program's operation is simple: a single mail message is read from
+stdin, filtered, then written to stdout (or piped to an external
+command).
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://packages.debian.org/renattach
+  http://www.pc-tools.net/unix/renattach
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Author:  Jem E. Berkes <info@pc-tools.net>
+  Bugs: <support@pc-tools.net>
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack renattach-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./renattach*.sh all
+
+-------------------------------------------
+
+Files included in the binary distro:
+  See content of *.tar.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.2.4-1 -----
+- Initial release 2008-02-26 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later

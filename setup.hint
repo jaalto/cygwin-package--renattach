@@ -1,0 +1,11 @@
+sdesc: "Filter to rename or delete dangerous e-mail attachments"
+ldesc: "A fast and efficient UNIX stream filter that can rename or delete
+potentially dangerous e-mail attachments. It's a highly effective way
+of protecting end-users from harmful mail content (worms/viruses) by
+disabling or removing attachments that may be accidentally executed by
+users. The filter is invoked as a simple pipe for use in a wide
+variety of systems. The 'kill' feature (which eliminates entire
+messages) can also help sites deal with resource strains caused by
+modern virus floods."
+category: Mail
+requires: cygwin
