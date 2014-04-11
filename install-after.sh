@@ -33,7 +33,7 @@ Main()
     fi
 
     root=$(echo $root | sed 's,/$,,')  # Delete trailing slash
-    etcdir=$root/etc
+    etcdir=$root/etc/defaults/etc
 
     echo ">> Relocating etc/ file"
     Cmd mv $etcdir/renattach.conf.ex $etcdir/renattach.conf
